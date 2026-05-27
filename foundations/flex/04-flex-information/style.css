@@ -24,3 +24,19 @@ img {
   justify-content: center;
   background: #eee;
 }
+.box {
+  background: palevioletred;
+  font-weight: bold;
+  text-align: center;
+  border: 6px solid maroon;
+  display: flex;
+  align-content: ;
+}
+
+.container {
+  background: whitesmoke;
+  border: 4px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
