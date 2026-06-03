@@ -1,5 +1,11 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  /* havde lavet alt herunder, men det var meget simplere
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  */
 }
 
 img {
@@ -10,6 +16,24 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px; /* rigtigt */
+}
+
+.box {
+  display: flex;
+  justify-content: center; /* var kommet til at lave en align items i stedet */
+  gap: 52px;
+}
+
+.container {
+  max-width: 200px;
+  /* havde lavet alt herunder, men det var meget simplere
+  flex-flow: column;
+  align-items: center;
+  text-wrap: wrap;
+  text-align: center;
+  display: flex;
+  */
 }
 
 /* do not edit this footer */
@@ -23,20 +47,4 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
-}
-.box {
-  background: palevioletred;
-  font-weight: bold;
-  text-align: center;
-  border: 6px solid maroon;
-  display: flex;
-  align-content: ;
-}
-
-.container {
-  background: whitesmoke;
-  border: 4px solid grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
