@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px; /*Havde glemt 16px */
 }
 
 input {
@@ -24,3 +27,67 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  /* manglede følgende */
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+a {    
+  color: #666; /*havde brugt farven Grey i stedet*/
+  text-decoration: none;
+}
+
+.header, 
+.footer {
+  display: flex;
+  /*flex-flow: row; havde sat denne */
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header {
+  /*margin-bottom: auto;*/
+}
+
+.footer {
+  background-color: #eeeeee;
+  /*margin-top: auto;*/
+}
+
+.left-links, 
+.right-links{
+  display: flex;
+  flex-flow: row;
+  gap: 16px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/*
+.content {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: auto;
+  align-items: center;
+}
+*/
+
+
